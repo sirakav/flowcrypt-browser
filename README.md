@@ -1,3 +1,29 @@
+# FlowCrypt - with comments disabled
+
+## What are we doing?
+We are trying to disable comments that FlowCrypt adds to every message which look like this:
+```sh
+Version: FlowCrypt Email Encryption 8.4.2
+Comment: Seamlessly send and receive encrypted email
+```
+
+## Build with Docker
+```sh
+docker run --rm -it -v ${PWD}:/app --workdir /app --entrypoint bash node:lts-bullseye
+
+yarn
+yarn build
+```
+
+## Install on Chrome
+```sh
+cd build/chrome-consumer
+zip -r flowcrypt.zip .
+```
+Then go to `chrome://extensions/` and load the extension from the zip file.
+```
+
+------ ORIGINAL README BELOW ------
 # FlowCrypt: Encrypt Gmail with PGP
 
 ## Users
