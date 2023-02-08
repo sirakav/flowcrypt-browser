@@ -21,9 +21,9 @@ cd build/chrome-consumer
 zip -r flowcrypt.zip .
 ```
 Then go to `chrome://extensions/` and load the extension from the zip file.
-```
 
 ------ ORIGINAL README BELOW ------
+
 # FlowCrypt: Encrypt Gmail with PGP
 
 ## Users
